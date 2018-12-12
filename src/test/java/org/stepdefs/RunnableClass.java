@@ -3,11 +3,10 @@ package org.stepdefs;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = "src/test/resources/featurefiles/testing.feature", 
+@CucumberOptions(features = "src/test/resources/featurefiles", 
 glue ="org.stepdefs", 
-format = {"pretty", "json:target/cucumber/report.json",
-		"junit:target/cucumber/report.xml",
-		"html:target/cucumber"},
+plugin = {"html:target/site/cucumber-html",
+		"json:target/cucumber1.json"},
 monochrome=true
 		)
 
