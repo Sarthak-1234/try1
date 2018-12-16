@@ -13,3 +13,11 @@ monochrome=true
 public class RunnableClass extends AbstractTestNGCucumberTests{
 //format = {"json:target/cucumber/report.json" })
 }
+
+/*
+Firefox
+pass browser through config file
+report comes under  project folder
+jenkins should show html report
+email the reports
+*/

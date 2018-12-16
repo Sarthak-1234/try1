@@ -5,6 +5,7 @@
 package org.testinitiator;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
@@ -16,6 +17,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -27,15 +29,20 @@ import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Reporter;
+import org.utils.ConfigPropertyReader;
+import org.utils.ReadingPropertyFile;
+import static org.utils.ConfigPropertyReader.getProperty;
 
 public class WebDriverFactory {
+	
+	
 
 	public static final String USERNAME = "priyankavanama1";
 	public static final String AUTOMATE_KEY = "KTQv1sFzVzZPvypEztYU";
 	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	static String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
 	static String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
-
+	
 	public static WebDriver driver;
 	private String browser = "";
 	public enum DriverType {
@@ -49,7 +56,7 @@ public class WebDriverFactory {
 
 	public static WebDriver getDriver() throws MalformedURLException {
 		//DriverType type = DriverType.valueOf(System.getProperty("browser").toUpperCase());
-		DriverType type = DriverType.CHROME;
+		DriverType type = DriverType.valueOf(ConfigPropertyReader.getProperty("browser").toUpperCase());
 		//DriverLocation location = DriverLocation.valueOf(System.getProperty("server").toUpperCase());
 		DriverLocation location = DriverLocation.LOCAL;
 		return getDriver(type, location);
@@ -142,7 +149,8 @@ public class WebDriverFactory {
 	}
 
 	private static WebDriver getChromeDriver() {
-		String driverPath = "src/test/resources/selenium-drivers/";System.getProperty("driverpath");
+		String driverPath = "src/test/resources/selenium-drivers/";
+		System.getProperty("driverpath");
 		String localMachineEnvironment = System.getProperty("os.name");
 		if (localMachineEnvironment.toLowerCase().trim().contains("mac")) {
 			System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver");
@@ -161,13 +169,24 @@ public class WebDriverFactory {
 	}
 
 	private static WebDriver getInternetExplorerDriver() {
-		String driverPath = System.getProperty("driverpath");
+		String driverPath = "src/test/resources/selenium-drivers/";
 		if (!driverPath.endsWith(".exe")) {
 			driverPath = driverPath + "IEDriverServer.exe";
 		}
 		System.setProperty("webdriver.ie.driver", driverPath);
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+		
+		capabilities.setCapability("acceptSslCerts", true);
+		//capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+		capabilities.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
+		//capabilities.setCapability("ignoreZoomSetting", true);
+		capabilities.setCapability("ignoreZoomLevel", true);
+		capabilities.setJavascriptEnabled(true);
+		capabilities.setCapability("nativeEvents", false);
+		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		
 		capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 		capabilities.setCapability("ignoreZoomSetting", true);
 		return new InternetExplorerDriver(capabilities);
@@ -178,9 +197,24 @@ public class WebDriverFactory {
 	}
 
 	private static WebDriver getFirefoxDriver() {
-		FirefoxProfile profile = new FirefoxProfile();
-		profile.setPreference("browser.cache.disk.enable", false);
-		return new FirefoxDriver(profile);
+
+		String driverPath = "src/test/resources/selenium-drivers/";
+		System.getProperty("driverpath");
+		String localMachineEnvironment = System.getProperty("os.name");
+		if (localMachineEnvironment.toLowerCase().trim().contains("mac")) {
+			System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver");
+		} else if (driverPath.endsWith(".exe") || driverPath.endsWith("geckodriver")) {
+			System.setProperty("webdriver.gecko.driver", driverPath);
+		} else {
+			System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
+		}
+//		DesiredCapabilities dc = new DesiredCapabilities();
+//		dc.setCapability("acceptInsecureCerts", true);
+		
+		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+		FirefoxProfile firefoxProfile = new FirefoxProfile();
+		return new FirefoxDriver(ffBinary,firefoxProfile);
 	}
 
 	private static WebDriver getMobileDriver() throws MalformedURLException {

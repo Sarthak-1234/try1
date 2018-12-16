@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.stepdefs.RunnableClass" time="94.846" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.stepdefs.RunnableClass" time="114.991" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin"/>
     <property name="java.vm.version" value="25.91-b15"/>
-    <property name="browser" value="chrome"/>
+    <property name="browser" value="ie"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\sarthakchadha\eclipse-workspace3\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1692750388827954330.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\sarthakchadha\eclipse-workspace3\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1741617140076470698.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Users\sarthakchadha\AppData\Local\Programs\Git\cmd;D:\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Users\sarthakchadha\AppData\Local\Android\Sdk\tools;C:\Users\sarthakchadha\AppData\Local\Android\Sdk\platform-tools;C:\Users\sarthakchadha\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jre1.8.0_91"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=chrome -Dserver=local -Dtags=Smoke -Dtest=RunnableClass -B clean verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=ie -Dserver=local -Dtags=Smoke -Dtest=RunnableClass -B clean verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,44 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="run_cukes" classname="org.stepdefs.RunnableClass" time="94.374">
-    <failure message="java.lang.AssertionError: Title is different expected [textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company] but found [Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company]" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: Title is different expected [textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company] but found [Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company]
-Caused by: java.lang.AssertionError: Title is different expected [textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company] but found [Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company]
-</failure>
-    <system-out><![CDATA[Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@ebaa6cb
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@1f9d6c7b
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@2e16b08d
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@1d8e2eea
-
-4 Scenarios (1 failed, 3 passed)
-18 Steps (1 failed, 17 passed)
-1m33.751s
-
-java.lang.AssertionError: Title is different expected [textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company] but found [Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.stepdefs.TitleVerification.Verify_Title(TitleVerification.java:17)
-	at ?.Then Verify Title(TitleVerification.feature:6)
-
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 7377
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 41467
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 40648
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 43097
-Only local connections are allowed.
-]]></system-err>
-  </testcase>
+  <testcase name="run_cukes" classname="org.stepdefs.RunnableClass" time="114.432"/>
 </testsuite>

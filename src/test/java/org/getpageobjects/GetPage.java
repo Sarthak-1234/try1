@@ -3,11 +3,13 @@ package org.getpageobjects;
 import static org.stepdefs.BaseTest.test;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,6 +29,10 @@ public class GetPage extends BaseUi {
 	
 	public String getTitle() {
 		return driver.getTitle();
+	}
+	
+	public void implicitWait() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void launchURL() {
@@ -73,10 +79,14 @@ public class GetPage extends BaseUi {
 		getObject(objectKey).clear();
 	}
 	
-	public void pressTabKey(String objectKey) {
-		getObject(objectKey).sendKeys(Keys.TAB);
+	public void pressTabUsingAction(String objectKey) {
+		Actions act = new Actions(driver);
+		act.sendKeys(getObject(objectKey),Keys.TAB).build().perform();
 	}
 	
+//	public void pressTabKey(String objectKey) {
+//		getObject(objectKey).sendKeys(Keys.TAB);
+//	}
 	
 	public WebElement getObject(String objectKey) {
 		ee = null;
@@ -85,19 +95,23 @@ public class GetPage extends BaseUi {
 		try {
 			//System.out.println(objectKey);
 			if(objectKey.endsWith("_xpath")) {
-				ee = driver.findElement(By.xpath(test.prop.getProperty(objectKey)));// present
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(test.prop.getProperty(objectKey))));
+				ee = driver.findElement(By.xpath(test.prop.getProperty(objectKey)));// present
+
 			}else if(objectKey.endsWith("_id")) {
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(test.prop.getProperty(objectKey))));
 				ee = driver.findElement(By.id(test.prop.getProperty(objectKey)));// present
-					wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(test.prop.getProperty(objectKey))));
+					
 			}
 			else if(objectKey.endsWith("_name")) {
-				ee = driver.findElement(By.name(test.prop.getProperty(objectKey)));// present
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name(test.prop.getProperty(objectKey))));
+				ee = driver.findElement(By.name(test.prop.getProperty(objectKey)));// present
+				
 			}
 			else if(objectKey.endsWith("_css")) {
-				ee = driver.findElement(By.cssSelector(test.prop.getProperty(objectKey)));// present
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(test.prop.getProperty(objectKey))));
+				ee = driver.findElement(By.cssSelector(test.prop.getProperty(objectKey)));// present
+				
 			}
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());

@@ -9,5 +9,6 @@ public class CommonFunctions {
 	public void Launch_URL() throws Throwable{
 		test.titlecheck.launchURL();
 		test.infoLogPass("URL is launched - http://www.fadavis.com");
+		test.titlecheck.implicitWait();
 	}
 }

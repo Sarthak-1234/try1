@@ -43,7 +43,11 @@ public class Login extends GetPage{
 	public void enterInCorrectEmailID() {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharmaa@qainfotech.com");
 		type("Email_id","vandanasharma2@qainfotech.com");
-		pressTabKey("Email_id");
+		type("Password_id","");
+		//pressTabKey("Email_id");
+		//pressTabUsingAction("Email_id");
+		//isElementPresent("Emailmessage_css");
+		
 	}
 	
 	public String incorrectEmailMessage() {

@@ -18,7 +18,7 @@ public class BaseUi {
 		WebDriverWait wait = new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
-
+	
 	public boolean isAlertPresent() 
 	{ 
 	    try 

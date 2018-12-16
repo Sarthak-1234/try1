@@ -20,6 +20,7 @@ public class TestSessionInitiator {
 
 	private String testname;
 	public ReadingPropertyFile prop;
+	public ReadingPropertyFile prop1;
 	
 	
 	
@@ -94,7 +95,9 @@ public class TestSessionInitiator {
 	}
 
 	private void _initPage() throws MalformedURLException {
+		prop1=new ReadingPropertyFile("config.properties");
 		this.driver = WebDriverFactory.getDriver();
+		driver.manage().deleteAllCookies();
 		titlecheck = new TitleVerification(driver);
 		logincheck = new Login(driver);
 		//System.out.println(logincheck.getClass().getSimpleName()+".propertiessony");

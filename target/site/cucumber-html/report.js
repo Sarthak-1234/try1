@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4514647772,
+  "duration": 17353323399,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 4273389656,
+  "duration": 6301848754,
   "status": "passed"
 });
 formatter.scenario({
@@ -66,43 +66,43 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 5001749777,
+  "duration": 6924748033,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Correct_Email_ID()"
 });
 formatter.result({
-  "duration": 1073356856,
+  "duration": 529582431,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Correct_Password()"
 });
 formatter.result({
-  "duration": 691017471,
+  "duration": 408002041,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "duration": 5560698417,
+  "duration": 6995014225,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.login_is_Successfull()"
 });
 formatter.result({
-  "duration": 620645946,
+  "duration": 340976292,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4239048338,
+  "duration": 2115057726,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4941081359,
+  "duration": 10837531628,
   "status": "passed"
 });
 formatter.background({
@@ -121,7 +121,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 16312534972,
+  "duration": 6437253139,
   "status": "passed"
 });
 formatter.scenario({
@@ -151,29 +151,29 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 4154503043,
+  "duration": 6469218458,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Email_ID()"
 });
 formatter.result({
-  "duration": 385717162,
+  "duration": 846979624,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.application_displays_error_message()"
 });
 formatter.result({
-  "duration": 766852548,
+  "duration": 946339135,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1580345520,
+  "duration": 1146943934,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3905144486,
+  "duration": 8880239609,
   "status": "passed"
 });
 formatter.background({
@@ -192,7 +192,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 5207457686,
+  "duration": 6716137015,
   "status": "passed"
 });
 formatter.scenario({
@@ -232,39 +232,39 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 9093794625,
+  "duration": 6458783796,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Correct_Email_ID()"
 });
 formatter.result({
-  "duration": 740308116,
+  "duration": 425789145,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Password()"
 });
 formatter.result({
-  "duration": 309886973,
+  "duration": 407535375,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "duration": 1382443385,
+  "duration": 3989435116,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.alert_should_be_present_about_incorrect_password()"
 });
 formatter.result({
-  "duration": 30433320,
+  "duration": 68742636,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1295934979,
+  "duration": 1261262995,
   "status": "passed"
 });
 formatter.uri("TitleVerification.feature");
@@ -276,7 +276,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4255106553,
+  "duration": 8713491683,
   "status": "passed"
 });
 formatter.scenario({
@@ -307,19 +307,18 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 6259725218,
+  "duration": 8035146207,
   "status": "passed"
 });
 formatter.match({
   "location": "TitleVerification.Verify_Title()"
 });
 formatter.result({
-  "duration": 30070209,
-  "error_message": "java.lang.AssertionError: Title is different expected [textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company] but found [Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:494)\r\n\tat org.testng.Assert.assertEquals(Assert.java:123)\r\n\tat org.testng.Assert.assertEquals(Assert.java:176)\r\n\tat org.stepdefs.TitleVerification.Verify_Title(TitleVerification.java:17)\r\n\tat ✽.Then Verify Title(TitleVerification.feature:6)\r\n",
-  "status": "failed"
+  "duration": 14207549,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 7125560833,
+  "duration": 1179329253,
   "status": "passed"
 });
 });
