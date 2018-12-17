@@ -211,10 +211,10 @@ public class WebDriverFactory {
 //		DesiredCapabilities dc = new DesiredCapabilities();
 //		dc.setCapability("acceptInsecureCerts", true);
 		
-		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-		FirefoxProfile firefoxProfile = new FirefoxProfile();
-		return new FirefoxDriver(ffBinary,firefoxProfile);
+		System.setProperty("webdriver.gecko.driver", driverPath);
+		FirefoxProfile profile = new FirefoxProfile();
+		profile.setPreference("browser.cache.disk.enable", false);
+		return new FirefoxDriver(profile);
 	}
 
 	private static WebDriver getMobileDriver() throws MalformedURLException {

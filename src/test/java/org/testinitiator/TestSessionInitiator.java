@@ -56,7 +56,7 @@ public class TestSessionInitiator {
 	}
 	
 	public void initReports(String scenarioName) {
-		rep = ExtentManager.getInstance("D:\\Reports\\");
+		rep = ExtentManager.getInstance(System.getProperty("user.dir")+"\\target\\");
 		scenario = rep.createTest(scenarioName);
 		screencapture = new TakeScreenshots(scenario, driver);
 		//scenario.log(Status.INFO, "Starting " +scenarioName);
