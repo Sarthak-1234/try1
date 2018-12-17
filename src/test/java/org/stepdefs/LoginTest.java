@@ -1,5 +1,6 @@
 package org.stepdefs;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,15 +14,15 @@ public class LoginTest {
 	public void click_on_Login_Join_button() throws Throwable {
 		test.logincheck.clickOnLoginButton();
 	}
-
-	@When("^Enter Correct Email ID$")
-	public void enter_Correct_Email_ID() throws Throwable {
-	    test.logincheck.enterCorrectEmailID();
+	
+	@When("^Enter CorrectEmail \"(.*)\"$")
+	public void enter_CorrectEmail_vandanasharma_qainfotech_com(String emailid) throws Throwable {
+		test.logincheck.enterCorrectEmailID(emailid);
 	}
 
-	@When("^Enter Correct Password$")
-	public void enter_Correct_Password() throws Throwable {
-	    test.logincheck.enterCorrectPassword();
+	@When("^Enter CorrectPassword \"(.*)\"$")
+	public void enter_CorrectPassword_password(String password) throws Throwable {
+		test.logincheck.enterCorrectPassword(password);
 	}
 
 	@When("^Click on Login Button$")

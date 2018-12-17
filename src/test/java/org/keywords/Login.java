@@ -20,14 +20,14 @@ public class Login extends GetPage{
 	}
 	
 
-	public void enterCorrectEmailID() {
+	public void enterCorrectEmailID(String email) {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharma@qainfotech.com");
-		type("Email_id","vandanasharma@qainfotech.com");
+		type("Email_id",email);
 	}
 	
-	public void enterCorrectPassword() {
+	public void enterCorrectPassword(String password) {
 		//driver.findElement(By.id("Password")).sendKeys("password");
-		type("Password_id","password");
+		type("Password_id",password);
 	}
 	
 	public void enterInCorrectPassword() {

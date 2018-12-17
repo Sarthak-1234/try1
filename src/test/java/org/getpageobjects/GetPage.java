@@ -115,7 +115,6 @@ public class GetPage extends BaseUi {
 			}
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
-			//reportFailure("Unable to extract Object "+objectKey);
 		}
 		return ee;
 	}

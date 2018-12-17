@@ -1,0 +1,422 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6295911424,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL",
+            "match": {
+              "location": "CommonFunctions.Launch_URL()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5755804108,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Check the authenticity using correct login credentials.",
+        "description": "",
+        "id": "check-the-authenticity-of-the-fadavis.com-website.;check-the-authenticity-using-correct-login-credentials.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 7630241497,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.closeUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4216536793,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Login/Join button",
+            "match": {
+              "location": "LoginTest.click_on_Login_Join_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20587065073,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterCorrectEmailID(Login.java:25)\r\n\tat org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)\r\n\tat ✽.And Enter CorrectEmail \"vandanasharma@qainfotech.com\"(Login.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Enter CorrectEmail \"vandanasharma@qainfotech.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vandanasharma@qainfotech.com",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Enter CorrectPassword \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginTest.enter_CorrectPassword_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Click on Login Button",
+            "match": {
+              "location": "LoginTest.click_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Login is Successfull.",
+            "match": {
+              "location": "LoginTest.login_is_Successfull()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5891378715,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL",
+            "match": {
+              "location": "CommonFunctions.Launch_URL()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3812476972,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Check the message displayed when incorrect email is used.",
+        "description": "",
+        "id": "check-the-authenticity-of-the-fadavis.com-website.;check-the-message-displayed-when-incorrect-email-is-used.",
+        "after": [
+          {
+            "result": {
+              "duration": 6649109934,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.closeUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4328621632,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click on Login/Join button",
+            "match": {
+              "location": "LoginTest.click_on_Login_Join_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20585107740,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterInCorrectEmailID(Login.java:45)\r\n\tat org.stepdefs.LoginTest.enter_Incorrect_Email_ID(LoginTest.java:40)\r\n\tat ✽.And Enter Incorrect Email ID(Login.feature:22)\r\n",
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "Enter Incorrect Email ID",
+            "match": {
+              "location": "LoginTest.enter_Incorrect_Email_ID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Application displays error message.",
+            "match": {
+              "location": "LoginTest.application_displays_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5989921783,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch URL",
+            "match": {
+              "location": "CommonFunctions.Launch_URL()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3789640982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Confirm the presence of Alert, when incorrect password is used.",
+        "description": "",
+        "id": "check-the-authenticity-of-the-fadavis.com-website.;confirm-the-presence-of-alert,-when-incorrect-password-is-used.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6773782767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.closeUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4589095738,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click on Login/Join button",
+            "match": {
+              "location": "LoginTest.click_on_Login_Join_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20562257972,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterCorrectEmailID(Login.java:25)\r\n\tat org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)\r\n\tat ✽.And Enter CorrectEmail \"vandanasharma@qainfotech.com\"(Login.feature:29)\r\n",
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "Enter CorrectEmail \"vandanasharma@qainfotech.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vandanasharma@qainfotech.com",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Enter Incorrect Password",
+            "match": {
+              "location": "LoginTest.enter_Incorrect_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Click on Login Button",
+            "match": {
+              "location": "LoginTest.click_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Alert message should be present about incorrect password",
+            "match": {
+              "location": "LoginTest.alert_should_be_present_about_incorrect_password()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check the Authenticity of the FADAVIS.COM website.",
+    "description": "",
+    "id": "check-the-authenticity-of-the-fadavis.com-website.",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3883986719,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verification of FADAVIS.COM Title",
+        "description": "",
+        "id": "test-fadavis.com;verification-of-fadavis.com-title",
+        "after": [
+          {
+            "result": {
+              "duration": 1388796716,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.closeUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5486662894,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch URL",
+            "match": {
+              "location": "CommonFunctions.Launch_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28145766,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify Title",
+            "match": {
+              "location": "TitleVerification.Verify_Title()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Test Fadavis.com",
+    "description": "",
+    "id": "test-fadavis.com",
+    "keyword": "Feature",
+    "uri": "TitleVerification.feature"
+  }
+]
