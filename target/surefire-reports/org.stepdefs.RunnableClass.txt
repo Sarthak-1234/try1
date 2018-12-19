@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.stepdefs.RunnableClass
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 139.291 sec <<< FAILURE! - in org.stepdefs.RunnableClass
-run_cukes(org.stepdefs.RunnableClass)  Time elapsed: 138.808 sec  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 140.074 sec - in org.stepdefs.RunnableClass

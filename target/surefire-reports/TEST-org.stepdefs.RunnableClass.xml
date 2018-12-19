@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.stepdefs.RunnableClass" time="139.291" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.stepdefs.RunnableClass" time="140.074" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin"/>
     <property name="java.vm.version" value="25.91-b15"/>
-    <property name="browser" value="chrome"/>
+    <property name="browser" value="ie"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\sarthakchadha\eclipse-workspace3\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4871459164585050373.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\sarthakchadha\eclipse-workspace3\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2109045364482327734.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Users\sarthakchadha\AppData\Local\Programs\Git\cmd;D:\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Users\sarthakchadha\AppData\Local\Android\Sdk\tools;C:\Users\sarthakchadha\AppData\Local\Android\Sdk\platform-tools;C:\Users\sarthakchadha\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jre1.8.0_91"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=chrome -Dserver=local -Dtags=Smoke -Dtest=RunnableClass -B clean verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=ie -Dserver=local -Dtags=Smoke -Dtest=RunnableClass -B clean verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,80 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="run_cukes" classname="org.stepdefs.RunnableClass" time="138.808">
-    <failure message="java.lang.NullPointerException" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-</failure>
-    <system-out><![CDATA[C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\config.propertiesfinalone.....
-java.io.FileInputStream@49c7b90e
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@5ef6ae06
-Timed out after 20 seconds waiting for visibility of all elements located by By.id: UserNam
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'DLLA1421', ip: '10.0.21.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\TEMP\scoped_dir37120_19776}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 9aca731a0a7e085242106b480a2bed2c
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\config.propertiesfinalone.....
-java.io.FileInputStream@4fcc529
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@79b663b3
-Timed out after 20 seconds waiting for visibility of all elements located by By.id: UserNam
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'DLLA1421', ip: '10.0.21.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\TEMP\scoped_dir18580_156}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 006e0ee62ca61b648de5c41291cda669
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\config.propertiesfinalone.....
-java.io.FileInputStream@1d2644e3
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@5ffc5491
-Timed out after 20 seconds waiting for visibility of all elements located by By.id: UserNam
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'DLLA1421', ip: '10.0.21.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Windows\TEMP\scoped_dir29144_19399}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 2f9da3819c9f7a78a3b73ebb4220f653
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\config.propertiesfinalone.....
-java.io.FileInputStream@383f3558
-Browser Version :::: 70.0.3538.110
-C:\Users\sarthakchadha\eclipse-workspace3\FADAVIS_Automation\src\test\resources\testdata\Login.propertiesfinalone.....
-java.io.FileInputStream@65f00478
-
-4 Scenarios (3 failed, 1 passed)
-18 Steps (3 failed, 7 skipped, 8 passed)
-2m18.245s
-
-java.lang.NullPointerException
-	at org.getpageobjects.GetPage.type(GetPage.java:71)
-	at org.keywords.Login.enterCorrectEmailID(Login.java:25)
-	at org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)
-	at ?.And Enter CorrectEmail "vandanasharma@qainfotech.com"(Login.feature:9)
-
-java.lang.NullPointerException
-	at org.getpageobjects.GetPage.type(GetPage.java:71)
-	at org.keywords.Login.enterInCorrectEmailID(Login.java:45)
-	at org.stepdefs.LoginTest.enter_Incorrect_Email_ID(LoginTest.java:40)
-	at ?.And Enter Incorrect Email ID(Login.feature:22)
-
-java.lang.NullPointerException
-	at org.getpageobjects.GetPage.type(GetPage.java:71)
-	at org.keywords.Login.enterCorrectEmailID(Login.java:25)
-	at org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)
-	at ?.And Enter CorrectEmail "vandanasharma@qainfotech.com"(Login.feature:29)
-
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 37958
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 21515
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 17123
-Only local connections are allowed.
-Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 22985
-Only local connections are allowed.
-]]></system-err>
-  </testcase>
+  <testcase name="run_cukes" classname="org.stepdefs.RunnableClass" time="139.503"/>
 </testsuite>

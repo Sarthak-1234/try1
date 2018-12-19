@@ -65,7 +65,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5755804108,
+  "duration": 20303386977,
   "status": "passed"
 });
 formatter.background({
@@ -84,7 +84,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 6295911424,
+  "duration": 26733490341,
   "status": "passed"
 });
 formatter.scenario({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 4216536793,
+  "duration": 8585717073,
   "status": "passed"
 });
 formatter.match({
@@ -143,9 +143,8 @@ formatter.match({
   "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
 });
 formatter.result({
-  "duration": 20587065073,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterCorrectEmailID(Login.java:25)\r\n\tat org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)\r\n\tat ✽.And Enter CorrectEmail \"vandanasharma@qainfotech.com\"(Login.feature:9)\r\n",
-  "status": "failed"
+  "duration": 640029493,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -157,26 +156,29 @@ formatter.match({
   "location": "LoginTest.enter_CorrectPassword_password(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 476947344,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6511685994,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.login_is_Successfull()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 353305620,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 7630241497,
+  "duration": 2101714177,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3812476972,
+  "duration": 8177011477,
   "status": "passed"
 });
 formatter.background({
@@ -195,7 +197,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 5891378715,
+  "duration": 7330228297,
   "status": "passed"
 });
 formatter.scenario({
@@ -225,25 +227,25 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 4328621632,
+  "duration": 6992766670,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Email_ID()"
 });
 formatter.result({
-  "duration": 20585107740,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterInCorrectEmailID(Login.java:45)\r\n\tat org.stepdefs.LoginTest.enter_Incorrect_Email_ID(LoginTest.java:40)\r\n\tat ✽.And Enter Incorrect Email ID(Login.feature:22)\r\n",
-  "status": "failed"
+  "duration": 852209399,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.application_displays_error_message()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 955805797,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 6649109934,
+  "duration": 1006779108,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -303,7 +305,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3789640982,
+  "duration": 7786975206,
   "status": "passed"
 });
 formatter.background({
@@ -322,7 +324,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 5989921783,
+  "duration": 6930129809,
   "status": "passed"
 });
 formatter.scenario({
@@ -365,7 +367,7 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 4589095738,
+  "duration": 7167841259,
   "status": "passed"
 });
 formatter.match({
@@ -378,30 +380,32 @@ formatter.match({
   "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
 });
 formatter.result({
-  "duration": 20562257972,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.getpageobjects.GetPage.type(GetPage.java:71)\r\n\tat org.keywords.Login.enterCorrectEmailID(Login.java:25)\r\n\tat org.stepdefs.LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(LoginTest.java:20)\r\n\tat ✽.And Enter CorrectEmail \"vandanasharma@qainfotech.com\"(Login.feature:29)\r\n",
-  "status": "failed"
+  "duration": 500034889,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Password()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 417217148,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4067889303,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.alert_should_be_present_about_incorrect_password()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 110959062,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 6773782767,
+  "duration": 940742693,
   "status": "passed"
 });
 formatter.uri("TitleVerification.feature");
@@ -413,7 +417,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3883986719,
+  "duration": 10450846466,
   "status": "passed"
 });
 formatter.scenario({
@@ -444,18 +448,18 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 5486662894,
+  "duration": 8558213530,
   "status": "passed"
 });
 formatter.match({
   "location": "TitleVerification.Verify_Title()"
 });
 formatter.result({
-  "duration": 28145766,
+  "duration": 15561771,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1388796716,
+  "duration": 995420891,
   "status": "passed"
 });
 });

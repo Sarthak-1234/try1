@@ -17,8 +17,8 @@ public class ExtentManager {
     	if (extent == null){
     		// generate report folder
     		String fileName="Report.html";
-    		Date d = new Date();
-    		String folderName=d.toString().replace(":", "_");
+    		//Date d = new Date();
+    		String folderName="attachments";
     		
     		// directory of the report folder
     		new File(reportPath+folderName+"//screenshots").mkdirs();
