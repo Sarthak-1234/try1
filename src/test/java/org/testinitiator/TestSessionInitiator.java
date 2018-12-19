@@ -2,6 +2,7 @@ package org.testinitiator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.Reporting.ExtentManager;
+import org.Reporting.ResultsIT;
 import org.keywords.Login;
 import org.keywords.TitleVerification;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,6 @@ public class TestSessionInitiator {
 	public ReadingPropertyFile prop1;
 	
 	
-	
 	/*-----Initializing Object of TestInitiator Class-----*/
 	public TestSessionInitiator test;
 	
@@ -32,6 +32,7 @@ public class TestSessionInitiator {
 	/*-----Initializing Object of Reports-----*/
 	public ExtentReports rep;
 	public ExtentTest scenario;
+	public ResultsIT result;
 	
 	
 	/*-----Initializing Object of Action Class-----*/
@@ -96,12 +97,14 @@ public class TestSessionInitiator {
 
 	private void _initPage() throws MalformedURLException {
 		prop1=new ReadingPropertyFile("config.properties");
+		result = new ResultsIT();
 		this.driver = WebDriverFactory.getDriver();
 		driver.manage().deleteAllCookies();
 		titlecheck = new TitleVerification(driver);
 		logincheck = new Login(driver);
 		//System.out.println(logincheck.getClass().getSimpleName()+".propertiessony");
 		prop=new ReadingPropertyFile(logincheck.getClass().getSimpleName()+".properties");
+		
 	}
 
 	private void testInitiator(String testname) throws MalformedURLException {

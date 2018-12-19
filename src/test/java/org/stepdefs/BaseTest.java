@@ -1,6 +1,12 @@
 package org.stepdefs;
 
+import static org.stepdefs.BaseTest.test;
+
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+
+import javax.mail.MessagingException;
 
 import org.Reporting.ExtentManager;
 import org.testinitiator.TestSessionInitiator;
@@ -19,7 +25,7 @@ public class BaseTest {
 	public static TestSessionInitiator test;
 	public static ExtentReports rep;
 	public static ExtentTest scenario;
-	
+	File f;
 	
 	@Before
 	public void setUp(Scenario scenarioName) throws MalformedURLException {
@@ -41,5 +47,13 @@ public class BaseTest {
 		}
 		test.putReport();
 		test.closeTestSession();
+		
+		
+		
+			
+		
+			
+		
+		
 	}
 }

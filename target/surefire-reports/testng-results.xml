@@ -11,13 +11,13 @@
       <![CDATA[<div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 26s)</div>]]>
+      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 10s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 8s)</div>]]>
+      <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 6s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 0s)</div>]]>
@@ -26,13 +26,13 @@
       <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Then  Login is Successfull. (passed : 6s)</div>]]>
+      <![CDATA[<div "result">Then  Login is Successfull. (passed : 9s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">Given  Launch URL (passed : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 7s)</div>]]>
+      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 13s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div>]]>
@@ -50,13 +50,13 @@
       <![CDATA[<div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Then  Login is Successfull. (passed : 6s)</div>]]>
+      <![CDATA[<div "result">Then  Login is Successfull. (passed : 16s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  Launch URL (passed : 7s)</div>]]>
+      <![CDATA[<div "result">Given  Launch URL (passed : 6s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div>]]>
@@ -80,21 +80,21 @@
       <![CDATA[<div "scenario">Scenario: Verification of FADAVIS.COM Title</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 8s)</div>]]>
+      <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 16s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">And  Enter Incorrect Password (passed : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="139513" started-at="2018-12-19T08:37:17Z" finished-at="2018-12-19T08:39:36Z">
+  <suite name="Surefire suite" duration-ms="120563" started-at="2018-12-19T16:34:16Z" finished-at="2018-12-19T16:36:17Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@9629756]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="139513" started-at="2018-12-19T08:37:17Z" finished-at="2018-12-19T08:39:36Z">
+    <test name="Surefire test" duration-ms="120563" started-at="2018-12-19T16:34:16Z" finished-at="2018-12-19T16:36:17Z">
       <class name="org.stepdefs.RunnableClass">
-        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@9629756]" name="run_cukes" duration-ms="139503" started-at="2018-12-19T14:07:17Z" description="Runs Cucumber Features" finished-at="2018-12-19T14:09:36Z">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" duration-ms="120547" started-at="2018-12-19T22:04:16Z" description="Runs Cucumber Features" finished-at="2018-12-19T22:06:17Z">
           <reporter-output>
             <line>
               <![CDATA[<div "featureFile">Feature File: Login.feature</div>]]>
@@ -106,13 +106,13 @@
               <![CDATA[<div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 26s)</div>]]>
+              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 10s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 8s)</div>]]>
+              <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 6s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 0s)</div>]]>
@@ -121,13 +121,13 @@
               <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Then  Login is Successfull. (passed : 6s)</div>]]>
+              <![CDATA[<div "result">Then  Login is Successfull. (passed : 9s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">Given  Launch URL (passed : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 7s)</div>]]>
+              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 13s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div>]]>
@@ -145,13 +145,13 @@
               <![CDATA[<div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Then  Login is Successfull. (passed : 6s)</div>]]>
+              <![CDATA[<div "result">Then  Login is Successfull. (passed : 16s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  Launch URL (passed : 7s)</div>]]>
+              <![CDATA[<div "result">Given  Launch URL (passed : 6s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div>]]>
@@ -175,7 +175,7 @@
               <![CDATA[<div "scenario">Scenario: Verification of FADAVIS.COM Title</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 8s)</div>]]>
+              <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 16s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">And  Enter Incorrect Password (passed : 0s)</div>]]>

@@ -6,6 +6,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import static org.stepdefs.BaseTest.test;
 
+import java.io.IOException;
+
+import javax.mail.MessagingException;
+
 import org.testng.Assert;
 
 public class LoginTest {
@@ -43,6 +47,18 @@ public class LoginTest {
 	@Then("^Application displays error message\\.$")
 	public void application_displays_error_message() throws Throwable {
 	    Assert.assertEquals(test.logincheck.incorrectEmailMessage(), "Email not recognized. Please check the spelling and try again. If your email address is correct, you do not have an existing account yet. Please create a new account below.");
+	    Runtime.getRuntime().addShutdownHook(new Thread() 
+	    { 
+	      public void run() 
+	      { 
+	    	  try {
+				test.result.sendResultsMail();
+			} catch (MessagingException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+	      } 
+	    });
 	}
 
 	@When("^Enter Incorrect Password$")
@@ -53,6 +69,7 @@ public class LoginTest {
 	@Then("^Alert message should be present about incorrect password$")
 	public void alert_should_be_present_about_incorrect_password() throws Throwable {
 	    Assert.assertTrue(test.logincheck.isAlertMessagePresent());
+	   
 	}
 
 }

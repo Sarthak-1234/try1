@@ -65,7 +65,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 20303386977,
+  "duration": 5933463140,
   "status": "passed"
 });
 formatter.background({
@@ -84,7 +84,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 26733490341,
+  "duration": 10904132043,
   "status": "passed"
 });
 formatter.scenario({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 8585717073,
+  "duration": 6759858773,
   "status": "passed"
 });
 formatter.match({
@@ -143,7 +143,7 @@ formatter.match({
   "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
 });
 formatter.result({
-  "duration": 640029493,
+  "duration": 461186462,
   "status": "passed"
 });
 formatter.match({
@@ -156,29 +156,29 @@ formatter.match({
   "location": "LoginTest.enter_CorrectPassword_password(String)"
 });
 formatter.result({
-  "duration": 476947344,
+  "duration": 200322133,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "duration": 6511685994,
+  "duration": 9841790737,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.login_is_Successfull()"
 });
 formatter.result({
-  "duration": 353305620,
+  "duration": 230304786,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2101714177,
+  "duration": 2044138202,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8177011477,
+  "duration": 3820264968,
   "status": "passed"
 });
 formatter.background({
@@ -197,7 +197,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 7330228297,
+  "duration": 13312229195,
   "status": "passed"
 });
 formatter.scenario({
@@ -227,25 +227,25 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 6992766670,
+  "duration": 6214952348,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Email_ID()"
 });
 formatter.result({
-  "duration": 852209399,
+  "duration": 616120615,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.application_displays_error_message()"
 });
 formatter.result({
-  "duration": 955805797,
+  "duration": 794580091,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1006779108,
+  "duration": 1188915916,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -305,7 +305,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7786975206,
+  "duration": 3998444001,
   "status": "passed"
 });
 formatter.background({
@@ -324,7 +324,7 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 6930129809,
+  "duration": 16960865351,
   "status": "passed"
 });
 formatter.scenario({
@@ -367,7 +367,7 @@ formatter.match({
   "location": "LoginTest.click_on_Login_Join_button()"
 });
 formatter.result({
-  "duration": 7167841259,
+  "duration": 6200900800,
   "status": "passed"
 });
 formatter.match({
@@ -380,32 +380,32 @@ formatter.match({
   "location": "LoginTest.enter_CorrectEmail_vandanasharma_qainfotech_com(String)"
 });
 formatter.result({
-  "duration": 500034889,
+  "duration": 319542969,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.enter_Incorrect_Password()"
 });
 formatter.result({
-  "duration": 417217148,
+  "duration": 222773679,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.click_on_Login_Button()"
 });
 formatter.result({
-  "duration": 4067889303,
+  "duration": 4274042545,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.alert_should_be_present_about_incorrect_password()"
 });
 formatter.result({
-  "duration": 110959062,
+  "duration": 23780878,
   "status": "passed"
 });
 formatter.after({
-  "duration": 940742693,
+  "duration": 1326186077,
   "status": "passed"
 });
 formatter.uri("TitleVerification.feature");
@@ -417,7 +417,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 10450846466,
+  "duration": 5934699584,
   "status": "passed"
 });
 formatter.scenario({
@@ -448,18 +448,18 @@ formatter.match({
   "location": "CommonFunctions.Launch_URL()"
 });
 formatter.result({
-  "duration": 8558213530,
+  "duration": 16919408036,
   "status": "passed"
 });
 formatter.match({
   "location": "TitleVerification.Verify_Title()"
 });
 formatter.result({
-  "duration": 15561771,
+  "duration": 33166652,
   "status": "passed"
 });
 formatter.after({
-  "duration": 995420891,
+  "duration": 1427723366,
   "status": "passed"
 });
 });
