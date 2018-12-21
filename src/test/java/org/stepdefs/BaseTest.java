@@ -29,7 +29,9 @@ public class BaseTest {
 	
 	@Before
 	public void setUp(Scenario scenarioName) throws MalformedURLException {
+		System.out.println(this.getClass().getSimpleName());
 		test = new TestSessionInitiator(this.getClass().getSimpleName());
+		System.out.println(scenarioName.getName());
 		test.initReports(scenarioName.getName());
 	}
 	

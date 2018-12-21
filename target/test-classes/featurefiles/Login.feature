@@ -1,10 +1,7 @@
 Feature: Check the Authenticity of the FADAVIS.COM website.
 
-Background:
-Given Launch URL
-
 Scenario Outline: Check the authenticity using correct login credentials.
-
+Given Launch URL for Login
 When Click on Login/Join button
 And Enter CorrectEmail "<email>"
 And Enter CorrectPassword "<password>"
@@ -17,14 +14,14 @@ Examples:
 
 
 Scenario: Check the message displayed when incorrect email is used.
-
+Given Launch URL for Login
 When Click on Login/Join button
 And Enter Incorrect Email ID
 Then Application displays error message.
 
 
 Scenario Outline: Confirm the presence of Alert, when incorrect password is used.
-
+Given Launch URL for Login
 When Click on Login/Join button
 And Enter CorrectEmail "<email>"
 And Enter Incorrect Password

@@ -40,7 +40,7 @@ public class ResultsIT {
 	String host = "smtp.gmail.com";
 	String from = "automation.resultsqait@gmail.com";
 	String password = "QaitAutomation";
-	private static final String replyto = "sarthak.mzn@gmail.com";//"shubhamkatiyar@qainfotech.com";
+	private static final String replyto = "sarthakchadha@qainfotech.com";//"shubhamkatiyar@qainfotech.com";
 	int port = 25;
 	String failureResults = "";
 	String skippedResults = "";
@@ -105,9 +105,9 @@ public class ResultsIT {
 		mailtext = mailtext + "If you have any queries mail to <a href=mailto:"
 				+ replyto + "?subject=Reply-of-Automation-Status"
 				+ today.replaceAll(" ", "_") + ">" + projectName
-				+ " AUTOMATION TEAM</a></i>";
+				+ " TEAM at QAInfotech</a></i>";
 		mailtext = mailtext
-				+ "<br>The detailed test results are given in the attached <i>emailable-report.html</i> </br></br>";
+				+ "<br>The detailed test results are given in the attached <i>Report.html</i> </br></br>";
 		
 		return mailtext;
 	}

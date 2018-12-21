@@ -13,6 +13,9 @@ import javax.mail.MessagingException;
 import org.testng.Assert;
 
 public class LoginTest {
+	
+	
+	
 
 	@When("^Click on Login/Join button$")
 	public void click_on_Login_Join_button() throws Throwable {
@@ -47,18 +50,6 @@ public class LoginTest {
 	@Then("^Application displays error message\\.$")
 	public void application_displays_error_message() throws Throwable {
 	    Assert.assertEquals(test.logincheck.incorrectEmailMessage(), "Email not recognized. Please check the spelling and try again. If your email address is correct, you do not have an existing account yet. Please create a new account below.");
-	    Runtime.getRuntime().addShutdownHook(new Thread() 
-	    { 
-	      public void run() 
-	      { 
-	    	  try {
-				test.result.sendResultsMail();
-			} catch (MessagingException | IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
-	      } 
-	    });
 	}
 
 	@When("^Enter Incorrect Password$")

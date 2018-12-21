@@ -2,7 +2,10 @@ package org.getpageobjects;
 
 import static org.stepdefs.BaseTest.test;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -29,6 +32,12 @@ public class GetPage extends BaseUi {
 	
 	public String getTitle() {
 		return driver.getTitle();
+	}
+	
+	public void switchNextTab() {
+		Set<String> windows = driver.getWindowHandles();
+		ArrayList<String> liwindows = new ArrayList<String>(windows);
+		driver.switchTo().window(liwindows.get(1));
 	}
 	
 	public void implicitWait() {

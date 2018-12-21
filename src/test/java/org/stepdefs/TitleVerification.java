@@ -7,14 +7,32 @@ import cucumber.api.java.en.When;
 import static org.stepdefs.BaseTest.test;
 import static org.testng.Assert.*;
 
+import java.io.IOException;
+
+import javax.mail.MessagingException;
+
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
 
 public class TitleVerification {
 	
+	
+	
 	@Then ("^Verify Title")
 		public void Verify_Title() throws Throwable{
+		Runtime.getRuntime().addShutdownHook(new Thread() 
+	    { 
+	      public void run() 
+	      { 
+	    	  try {
+				test.result.sendResultsMail();
+			} catch (MessagingException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+	      } 
+	    });
 		assertEquals(test.titlecheck.verifyTitle(), "Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company"); 
 		
 	}

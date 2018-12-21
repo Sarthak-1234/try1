@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 19 22:04:16 IST 2018</td>
+<td>Started on:</td><td>Fri Dec 21 11:47:41 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>120 seconds (120563 ms)</td>
+<tr><td>Total time:</td><td>102 seconds (102951 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,42 +76,51 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='org.stepdefs.RunnableClass.run_cukes()'><b>run_cukes</b><br>Test class: org.stepdefs.RunnableClass<br>Test method: Runs Cucumber Features<br/>
-<a href="#Output-50699452" onClick='toggleBox("Output-50699452", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2125062626" onClick='toggleBox("Output-2125062626", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-50699452" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-50699452">
+<a href="#Output-2125062626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125062626">
+<div "featureFile">Feature File: HomePage.feature</div><br/>
+<div "feature">Feature: Check BrowserSite and navigation to other products</div><br/>
+<div "scenarioOutline">Scenario Outline: Check the product navigation through FADAVIS.COM</div><br/>
+<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div><br/>
+<div "result">Given  Launch URL for Login (passed : 8s)</div><br/>
+<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 14s)</div><br/>
+<div "result">When  click on BrowserSite dropdown (passed : 0s)</div><br/>
+<div "result">And  click on Davis Edge (passed : 0s)</div><br/>
+<div "result">Then  it should open the new tab with title Davis Edge (passed : 8s)</div><br/>
 <div "featureFile">Feature File: Login.feature</div><br/>
 <div "feature">Feature: Check the Authenticity of the FADAVIS.COM website.</div><br/>
 <div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div><br/>
-<div "result">When  Click on Login&#x2F;Join button (passed : 10s)</div><br/>
 <div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div><br/>
-<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 6s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 6s)</div><br/>
+<div "result">When  Login in the application with &quot;vandanasharma@qainfotech.com&quot; and &quot;password&quot; (passed : 3s)</div><br/>
+<div "result">When  click on BrowserSite dropdown (passed : 0s)</div><br/>
+<div "result">And  click on Davis Edge (passed : 0s)</div><br/>
+<div "result">Then  it should open the new tab with title Davis Edge (passed : 4s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 0s)</div><br/>
+<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div><br/>
+<div "result">When  Click on Login&#x2F;Join button (passed : 5s)</div><br/>
+<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 3s)</div><br/>
 <div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 0s)</div><br/>
 <div "result">And  Click on Login Button (passed : 0s)</div><br/>
-<div "result">Then  Login is Successfull. (passed : 9s)</div><br/>
-<div "result">Given  Launch URL (passed : 0s)</div><br/>
-<div "result">When  Click on Login&#x2F;Join button (passed : 13s)</div><br/>
-<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div><br/>
-<div "result">And  Enter CorrectEmail &quot;vandanasharma@qainfotech.com&quot; (passed : 6s)</div><br/>
-<div "result">And  Enter CorrectPassword &quot;password&quot; (passed : 0s)</div><br/>
-<div "result">And  Click on Login Button (passed : 0s)</div><br/>
 <div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div><br/>
-<div "result">Then  Login is Successfull. (passed : 16s)</div><br/>
 <div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div><br/>
-<div "result">Given  Launch URL (passed : 6s)</div><br/>
+<div "result">Then  Login is Successfull. (passed : 4s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 3s)</div><br/>
 <div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div><br/>
-<div "result">And  Enter Incorrect Email ID (passed : 0s)</div><br/>
-<div "result">Then  Application displays error message. (passed : 4s)</div><br/>
-<div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div><br/>
+<div "result">And  Enter CorrectEmail &quot;vandanasharma@qainfotech.com&quot; (passed : 0s)</div><br/>
+<div "result">And  Enter CorrectPassword &quot;password&quot; (passed : 1s)</div><br/>
+<div "result">And  Click on Login Button (passed : 0s)</div><br/>
 <div "featureFile">Feature File: TitleVerification.feature</div><br/>
 <div "feature">Feature: Test Fadavis.com</div><br/>
 <div "scenario">Scenario: Verification of FADAVIS.COM Title</div><br/>
-<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 16s)</div><br/>
-<div "result">And  Enter Incorrect Password (passed : 0s)</div><br/>
+<div "result">Then  Login is Successfull. (passed : 4s)</div><br/>
+<div "result">Given  Launch URL for Login (passed : 0s)</div><br/>
 </div>
 </td>
 <td></td>
-<td>120</td>
+<td>102</td>
 <td>org.stepdefs.RunnableClass@4520ebad</td></tr>
 </table><p>
 </body>

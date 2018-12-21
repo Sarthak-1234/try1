@@ -23,6 +23,7 @@ public class Login extends GetPage{
 	public void enterCorrectEmailID(String email) {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharma@qainfotech.com");
 		type("Email_id",email);
+		System.out.println(email);
 	}
 	
 	public void enterCorrectPassword(String password) {
