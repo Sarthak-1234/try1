@@ -11,8 +11,6 @@ Examples:
 |email|password|
 |vandanasharma@qainfotech.com|password|
 
-
-
 Scenario: Check the message displayed when incorrect email is used.
 Given Launch URL for Login
 When Click on Login/Join button

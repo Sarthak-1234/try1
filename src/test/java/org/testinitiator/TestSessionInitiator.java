@@ -7,6 +7,7 @@ import org.keywords.HomePage;
 import org.keywords.Login;
 import org.keywords.TitleVerification;
 import org.openqa.selenium.WebDriver;
+import org.utils.ConfigPropertyReader;
 import org.utils.ReadingPropertyFile;
 import org.utils.TakeScreenshots;
 
@@ -15,16 +16,20 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import static org.junit.Assert.assertThat;
+import static org.stepdefs.BaseTest.test;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
+
+import javax.mail.MessagingException;
 
 public class TestSessionInitiator {
 
 	private String testname;
-	public ReadingPropertyFile prop;
-	public ReadingPropertyFile prop1;
+//	public ReadingPropertyFile prop;
+//	public ReadingPropertyFile prop1;
 //	public ReadingPropertyFile prop2;
-	
+	public ConfigPropertyReader prop;
 	
 	/*-----Initializing Object of TestInitiator Class-----*/
 	public TestSessionInitiator test;
@@ -97,9 +102,13 @@ public class TestSessionInitiator {
 	public void closeWebDriver() {
 		driver.close();
 	}
+	
+	
 
 	private void _initPage() throws MalformedURLException {
-		prop1=new ReadingPropertyFile("config.properties");
+		//prop1=new ReadingPropertyFile("config.properties");
+		prop = new ConfigPropertyReader();
+		
 		result = new ResultsIT();
 		this.driver = WebDriverFactory.getDriver();
 		driver.manage().deleteAllCookies();
@@ -107,8 +116,8 @@ public class TestSessionInitiator {
 		titlecheck = new TitleVerification(driver);
 		logincheck = new Login(driver);
 		//System.out.println(logincheck.getClass().getSimpleName()+".propertiessony");
-		prop=new ReadingPropertyFile(logincheck.getClass().getSimpleName()+".properties");
-		//prop2=new ReadingPropertyFile(homepage.getClass().getSimpleName()+".properties");
+//		prop=new ReadingPropertyFile(logincheck.getClass().getSimpleName()+".properties");
+//		prop2=new ReadingPropertyFile(homepage.getClass().getSimpleName()+".properties");
 		
 	}
 

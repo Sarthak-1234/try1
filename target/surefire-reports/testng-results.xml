@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<div "featureFile">Feature File: HomePage.feature</div>]]>
+      <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;HomePage.feature</div>]]>
     </line>
     <line>
       <![CDATA[<div "feature">Feature: Check BrowserSite and navigation to other products</div>]]>
@@ -14,117 +14,33 @@
       <![CDATA[<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 8s)</div>]]>
+      <![CDATA[<div "result">Given  Launch URL for Login (passed : 10s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 14s)</div>]]>
+      <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 18s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
+      <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
+      <![CDATA[<div "result">And  click on Davis Edge (passed : 3s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Then  it should open the new tab with title Davis Edge (passed : 8s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "featureFile">Feature File: Login.feature</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "feature">Feature: Check the Authenticity of the FADAVIS.COM website.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 6s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">When  Login in the application with &quot;vandanasharma@qainfotech.com&quot; and &quot;password&quot; (passed : 3s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Then  it should open the new tab with title Davis Edge (passed : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 5s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 3s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Then  Login is Successfull. (passed : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 3s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Enter CorrectEmail &quot;vandanasharma@qainfotech.com&quot; (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Enter CorrectPassword &quot;password&quot; (passed : 1s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "featureFile">Feature File: TitleVerification.feature</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "feature">Feature: Test Fadavis.com</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenario">Scenario: Verification of FADAVIS.COM Title</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Then  Login is Successfull. (passed : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 0s)</div>]]>
+      <![CDATA[<div "result">Then  it should open the new tab with title KIA (passed : 14s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="102951" started-at="2018-12-21T06:17:41Z" finished-at="2018-12-21T06:19:24Z">
+  <suite name="Surefire suite" duration-ms="64367" started-at="2018-12-22T13:31:50Z" finished-at="2018-12-22T13:32:55Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="102951" started-at="2018-12-21T06:17:41Z" finished-at="2018-12-21T06:19:24Z">
+    <test name="Surefire test" duration-ms="64367" started-at="2018-12-22T13:31:50Z" finished-at="2018-12-22T13:32:55Z">
       <class name="org.stepdefs.RunnableClass">
-        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" duration-ms="102949" started-at="2018-12-21T11:47:41Z" description="Runs Cucumber Features" finished-at="2018-12-21T11:49:24Z">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" duration-ms="64351" started-at="2018-12-22T19:01:50Z" description="Runs Cucumber Features" finished-at="2018-12-22T19:02:55Z">
           <reporter-output>
             <line>
-              <![CDATA[<div "featureFile">Feature File: HomePage.feature</div>]]>
+              <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;HomePage.feature</div>]]>
             </line>
             <line>
               <![CDATA[<div "feature">Feature: Check BrowserSite and navigation to other products</div>]]>
@@ -136,103 +52,19 @@
               <![CDATA[<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 8s)</div>]]>
+              <![CDATA[<div "result">Given  Launch URL for Login (passed : 10s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 14s)</div>]]>
+              <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 18s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
+              <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
+              <![CDATA[<div "result">And  click on Davis Edge (passed : 3s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Then  it should open the new tab with title Davis Edge (passed : 8s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "featureFile">Feature File: Login.feature</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "feature">Feature: Check the Authenticity of the FADAVIS.COM website.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenarioOutline">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenario">Scenario Outline: Check the authenticity using correct login credentials.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 6s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">When  Login in the application with &quot;vandanasharma@qainfotech.com&quot; and &quot;password&quot; (passed : 3s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Then  it should open the new tab with title Davis Edge (passed : 4s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenario">Scenario: Check the message displayed when incorrect email is used.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 5s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Enter CorrectEmail &quot;&lt;email&gt;&quot; (passed : 3s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Enter CorrectPassword &quot;&lt;password&gt;&quot; (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenarioOutline">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenario">Scenario Outline: Confirm the presence of Alert, when incorrect password is used.</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Then  Login is Successfull. (passed : 4s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 3s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">When  Click on Login&#x2F;Join button (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Enter CorrectEmail &quot;vandanasharma@qainfotech.com&quot; (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Enter CorrectPassword &quot;password&quot; (passed : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Click on Login Button (passed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "featureFile">Feature File: TitleVerification.feature</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "feature">Feature: Test Fadavis.com</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenario">Scenario: Verification of FADAVIS.COM Title</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Then  Login is Successfull. (passed : 4s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 0s)</div>]]>
+              <![CDATA[<div "result">Then  it should open the new tab with title KIA (passed : 14s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- run_cukes -->

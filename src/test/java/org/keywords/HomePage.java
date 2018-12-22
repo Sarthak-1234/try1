@@ -1,5 +1,11 @@
 package org.keywords;
 
+import static org.stepdefs.BaseTest.test;
+
+import java.io.IOException;
+
+import javax.mail.MessagingException;
+
 import org.getpageobjects.GetPage;
 import org.openqa.selenium.WebDriver;
 
@@ -9,23 +15,25 @@ public class HomePage extends GetPage{
 		super(driver);
 	}
 	
+	
 	public void clickBrowserSite() {
-		click("BrowserSite_id");
+		click("HomePage", "BrowserSite_id");
+		
 	}
 	
 	public void clickOnDavisEdge() {
-		click("DavisEdge_css");
+		click("HomePage","DavisEdge_css");
 	}
 	
 	public void enterCorrectEmailID(String email) {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharma@qainfotech.com");
-		type("Email_id",email);
+		type("Login","Email_id",email);
 		System.out.println(email);
 	}
 	
 	public void enterCorrectPassword(String password) {
 		//driver.findElement(By.id("Password")).sendKeys("password");
-		type("Password_id",password);
+		type("Login","Password_id",password);
 	}
 	
 	

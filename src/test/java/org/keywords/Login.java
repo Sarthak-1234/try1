@@ -16,35 +16,35 @@ public class Login extends GetPage{
 	
 	public void clickOnLoginButton() {
 		//driver.findElement(By.xpath("(//a[text()='login/join'])[1]")).click();
-		click("Loginjoinbutton_xpath");
+		click("Login","Loginjoinbutton_xpath");
 	}
 	
 
 	public void enterCorrectEmailID(String email) {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharma@qainfotech.com");
-		type("Email_id",email);
+		type("Login","Email_id",email);
 		System.out.println(email);
 	}
 	
 	public void enterCorrectPassword(String password) {
 		//driver.findElement(By.id("Password")).sendKeys("password");
-		type("Password_id",password);
+		type("Login","Password_id",password);
 	}
 	
 	public void enterInCorrectPassword() {
 		//driver.findElement(By.id("Password")).sendKeys("password2");
-		type("Password_id","password2");
+		type("Login","Password_id","password2");
 	}
 	
 	public void clickLogin() {
 		//driver.findElement(By.id("btnLogin")).click();
-		click("Login_id");
+		click("Login","Login_id");
 	}
 	
 	public void enterInCorrectEmailID() {
 		//driver.findElement(By.id("UserName")).sendKeys("vandanasharmaa@qainfotech.com");
-		type("Email_id","vandanasharma2@qainfotech.com");
-		type("Password_id","");
+		type("Login","Email_id","vandanasharma2@qainfotech.com");
+		type("Login","Password_id","");
 		//pressTabKey("Email_id");
 		//pressTabUsingAction("Email_id");
 		//isElementPresent("Emailmessage_css");
@@ -53,17 +53,17 @@ public class Login extends GetPage{
 	
 	public String incorrectEmailMessage() {
 		//return driver.findElement(By.cssSelector("div#emailCheck>div")).getText();
-		return getMessage("Emailmessage_css");
+		return getMessage("Login","Emailmessage_css");
 	}
 	
 
 	public String loginverificationName() {
 		//return driver.findElement(By.cssSelector("a.pull-right.postLogin>b")).getText();
-		return getMessage ("LoginVerificationName_css");
+		return getMessage ("Login","LoginVerificationName_css");
 	}
 	
 	public boolean isAlertMessagePresent() {
-		return isElementPresent("AlertMessage_xpath");
+		return isElementPresent("Login","AlertMessage_xpath");
 	}
 
 }

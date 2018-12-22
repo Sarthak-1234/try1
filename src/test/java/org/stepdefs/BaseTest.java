@@ -26,6 +26,7 @@ public class BaseTest {
 	public static ExtentReports rep;
 	public static ExtentTest scenario;
 	File f;
+	static boolean flag = true;
 	
 	@Before
 	public void setUp(Scenario scenarioName) throws MalformedURLException {
@@ -49,6 +50,26 @@ public class BaseTest {
 		}
 		test.putReport();
 		test.closeTestSession();
+		
+		
+		if(flag) {
+			Runtime.getRuntime().addShutdownHook(new Thread() 
+		    { 
+		      public void run()
+		      { 
+		    	  try {
+					test.result.sendResultsMail();
+				} catch (MessagingException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} 
+		      } 
+		    });
+			flag = false;
+		}
+		
+		
+		
 		
 		
 		

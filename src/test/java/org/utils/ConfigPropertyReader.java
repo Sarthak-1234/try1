@@ -10,7 +10,7 @@ import java.util.Properties;
  */
 public class ConfigPropertyReader {
 
-    private static String defaultConfigFile = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\config.properties";
+    private static String defaultConfigFile = "Config";
     
     /**
      * construtor of this class
@@ -26,9 +26,10 @@ public class ConfigPropertyReader {
      * @param Property property name for which value has to be fetched
      * @return String value of the property
      */
-    public static String getProperty(String propFile, String Property) {
+    public static String getProperty(String propFilename, String Property) {
         try {
-            Properties prop = ResourceLoader.loadProperties(propFile);
+        	String proFilenew = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\"+propFilename+".properties";
+            Properties prop = ResourceLoader.loadProperties(proFilenew);
             return prop.getProperty(Property);
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -39,4 +40,5 @@ public class ConfigPropertyReader {
     public static String getProperty(String property){
         return getProperty(defaultConfigFile, property);
     }
-}
+    }
+

@@ -15,7 +15,7 @@ org\utils\ResourceLoader.class
 org\utils\ConfigPropertyReader.class
 org\Reporting\ExtentManager.class
 org\getpageobjects\GetPage.class
-org\stepdefs\TitleVerification$1.class
+org\stepdefs\BaseTest$1.class
 org\keywords\HomePage.class
 org\stepdefs\LoginTest.class
 org\getpageobjects\BaseUi.class

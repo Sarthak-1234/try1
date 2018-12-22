@@ -16,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.utils.ConfigPropertyReader;
 import org.utils.ReadingPropertyFile;
 
 public class GetPage extends BaseUi {
@@ -48,19 +49,17 @@ public class GetPage extends BaseUi {
 		test.launchUrl("https://www.fadavis.com");
 	}
 	
-	public boolean isElementPresent(String objectKey) {
-		
-		
+	public boolean isElementPresent(String propFilename, String objectKey) {
 		if(objectKey.endsWith("_xpath")) {
-			e = driver.findElements(By.xpath(test.prop.getProperty(objectKey)));// present
+			e = driver.findElements(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 		}else if(objectKey.endsWith("_id")) {
-				e = driver.findElements(By.id(test.prop.getProperty(objectKey)));// present
+				e = driver.findElements(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 		}
 		else if(objectKey.endsWith("_name")) {
-			e = driver.findElements(By.name(test.prop.getProperty(objectKey)));// present
+			e = driver.findElements(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 		}
 		else if(objectKey.endsWith("_css")) {
-			e = driver.findElements(By.cssSelector(test.prop.getProperty(objectKey)));// present
+			e = driver.findElements(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 		}
 		if(e.size()==0)
 			return false;
@@ -68,58 +67,58 @@ public class GetPage extends BaseUi {
 			return true;
 	}
 	
-	public void click(String objectKey) {
-		getObject(objectKey).click();
+	public void click(String propFilename, String objectKey) {
+		getObject(propFilename,objectKey).click();
 	}
 	
-	public String getMessage(String objectKey) {
-		return getObject(objectKey).getText().trim();
+	public String getMessage(String propFilename,String objectKey) {
+		return getObject(propFilename,objectKey).getText().trim();
 	}
 	
-	public void type(String objectKey,String data) {
-		getObject(objectKey).sendKeys(data);
+	public void type(String propFilename, String objectKey,String data) {
+		getObject(propFilename,objectKey).sendKeys(data);
 	}
-	public void select(String objectKey,String data) {
-		Select s= new Select(getObject(objectKey));
+	public void select(String propFilename, String objectKey,String data) {
+		Select s= new Select(getObject(propFilename,objectKey));
 		s.selectByVisibleText(data);
 	}
 	
-	public void clear(String objectKey) {
-		getObject(objectKey).clear();
+	public void clear(String propFilename,String objectKey) {
+		getObject(propFilename,objectKey).clear();
 	}
 	
-	public void pressTabUsingAction(String objectKey) {
+	public void pressTabUsingAction(String propFilename,String objectKey) {
 		Actions act = new Actions(driver);
-		act.sendKeys(getObject(objectKey),Keys.TAB).build().perform();
+		act.sendKeys(getObject(propFilename,objectKey),Keys.TAB).build().perform();
 	}
 	
 //	public void pressTabKey(String objectKey) {
 //		getObject(objectKey).sendKeys(Keys.TAB);
 //	}
 	
-	public WebElement getObject(String objectKey) {
+	public WebElement getObject(String propFilename, String objectKey) {
 		ee = null;
 		wait  =  new WebDriverWait(driver, 20);
 
 		try {
 			//System.out.println(objectKey);
 			if(objectKey.endsWith("_xpath")) {
-				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(test.prop.getProperty(objectKey))));
-				ee = driver.findElement(By.xpath(test.prop.getProperty(objectKey)));// present
-
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
+				
 			}else if(objectKey.endsWith("_id")) {
-				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(test.prop.getProperty(objectKey))));
-				ee = driver.findElement(By.id(test.prop.getProperty(objectKey)));// present
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 					
 			}
 			else if(objectKey.endsWith("_name")) {
-				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name(test.prop.getProperty(objectKey))));
-				ee = driver.findElement(By.name(test.prop.getProperty(objectKey)));// present
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 				
 			}
 			else if(objectKey.endsWith("_css")) {
-				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(test.prop.getProperty(objectKey))));
-				ee = driver.findElement(By.cssSelector(test.prop.getProperty(objectKey)));// present
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 				
 			}
 		}catch(Exception ex) {

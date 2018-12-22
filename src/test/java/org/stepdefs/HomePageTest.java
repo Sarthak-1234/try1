@@ -8,10 +8,6 @@ import static org.testng.Assert.*;
 
 public class HomePageTest {
 	
-	
-	
-	
-	
 	@When("^click on BrowserSite dropdown$")
 	public void click_on_BrowserSite_dropdown() throws Throwable {
 		test.homepage.clickBrowserSite();
@@ -21,12 +17,11 @@ public class HomePageTest {
 	public void click_on_Davis_Edge() throws Throwable {
 	    test.homepage.clickOnDavisEdge();
 	}
-
-	@Then("^it should open the new tab with title Davis Edge$")
-	public void it_should_open_the_new_tab_with_title_Davis_Edge() throws Throwable {
+	
+	@Then("^it should open the new tab with title KIA$")
+	public void it_should_open_the_new_tab_with_title_KIA() throws Throwable {
 		test.homepage.switchNextTab();
-		assertEquals(test.homepage.getTitle(), "DavisEdge - My Products");
-		
+		assertEquals(test.homepage.getTitle(), "Kinesiology In Action");
 	}
 
 }

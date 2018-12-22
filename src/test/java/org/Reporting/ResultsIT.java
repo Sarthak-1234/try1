@@ -276,6 +276,7 @@ public class ResultsIT {
 		Document dom = null;
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
+			 
 			dom = dBuilder.parse(file);
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();

@@ -21,18 +21,7 @@ public class TitleVerification {
 	
 	@Then ("^Verify Title")
 		public void Verify_Title() throws Throwable{
-		Runtime.getRuntime().addShutdownHook(new Thread() 
-	    { 
-	      public void run() 
-	      { 
-	    	  try {
-				test.result.sendResultsMail();
-			} catch (MessagingException | IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
-	      } 
-	    });
+		
 		assertEquals(test.titlecheck.verifyTitle(), "Textbooks and Classroom Resources for Nursing and Health Professions - F.A. Davis Company"); 
 		
 	}
