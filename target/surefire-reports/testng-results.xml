@@ -2,69 +2,159 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;HomePage.feature</div>]]>
+      <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;Teacher_CreateAssignment.feature</div>]]>
     </line>
     <line>
-      <![CDATA[<div "feature">Feature: Check BrowserSite and navigation to other products</div>]]>
+      <![CDATA[<div "feature">Feature: Creation of CLASS through Teacher</div>]]>
     </line>
     <line>
-      <![CDATA[<div "scenarioOutline">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: Verification of assignment creation</div>]]>
     </line>
     <line>
-      <![CDATA[<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
+      <![CDATA[<div "scenario">Scenario Outline: Verification of assignment creation</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  Launch URL for Login (passed : 10s)</div>]]>
+      <![CDATA[<div "result">Given  Launch URL for Login (passed : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 18s)</div>]]>
+      <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 8s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 1s)</div>]]>
+      <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  click on Davis Edge (passed : 3s)</div>]]>
+      <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Then  it should open the new tab with title KIA (passed : 14s)</div>]]>
+      <![CDATA[<div "result">And  It should open Davis Edge in new window (passed : 7s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Rudd Title (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Add Button (passed : 7s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Enter Class Title (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Enter Class Description (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click for Auto Enroll checkbox (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Create Class button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Continue To Success Center (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Manage Classes (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Create Assignment (passed : 9s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Enter Assignment Name (passed : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Create Quick Assignment button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Select Course Topic (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Continue button (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click on Save &amp; Exit button (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Verify it should display Assignment under Assignment Grades (passed : 2s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="64367" started-at="2018-12-22T13:31:50Z" finished-at="2018-12-22T13:32:55Z">
+  <suite name="Surefire suite" duration-ms="60920" started-at="2019-01-07T08:38:48Z" finished-at="2019-01-07T08:39:49Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@8bd1b6a]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="64367" started-at="2018-12-22T13:31:50Z" finished-at="2018-12-22T13:32:55Z">
+    <test name="Surefire test" duration-ms="60920" started-at="2019-01-07T08:38:48Z" finished-at="2019-01-07T08:39:49Z">
       <class name="org.stepdefs.RunnableClass">
-        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@4520ebad]" name="run_cukes" duration-ms="64351" started-at="2018-12-22T19:01:50Z" description="Runs Cucumber Features" finished-at="2018-12-22T19:02:55Z">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:org.stepdefs.RunnableClass@8bd1b6a]" name="run_cukes" duration-ms="60904" started-at="2019-01-07T14:08:48Z" description="Runs Cucumber Features" finished-at="2019-01-07T14:09:49Z">
           <reporter-output>
             <line>
-              <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;HomePage.feature</div>]]>
+              <![CDATA[<div "featureFile">Feature File: src&#x2F;test&#x2F;resources&#x2F;featurefiles&#x2F;Teacher_CreateAssignment.feature</div>]]>
             </line>
             <line>
-              <![CDATA[<div "feature">Feature: Check BrowserSite and navigation to other products</div>]]>
+              <![CDATA[<div "feature">Feature: Creation of CLASS through Teacher</div>]]>
             </line>
             <line>
-              <![CDATA[<div "scenarioOutline">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: Verification of assignment creation</div>]]>
             </line>
             <line>
-              <![CDATA[<div "scenario">Scenario Outline: Check the product navigation through FADAVIS.COM</div>]]>
+              <![CDATA[<div "scenario">Scenario Outline: Verification of assignment creation</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  Launch URL for Login (passed : 10s)</div>]]>
+              <![CDATA[<div "result">Given  Launch URL for Login (passed : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 18s)</div>]]>
+              <![CDATA[<div "result">When  Login in the application with &quot;&lt;emailid&gt;&quot; and &quot;&lt;password&gt;&quot; (passed : 8s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 1s)</div>]]>
+              <![CDATA[<div "result">When  click on BrowserSite dropdown (passed : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  click on Davis Edge (passed : 3s)</div>]]>
+              <![CDATA[<div "result">And  click on Davis Edge (passed : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Then  it should open the new tab with title KIA (passed : 14s)</div>]]>
+              <![CDATA[<div "result">And  It should open Davis Edge in new window (passed : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Rudd Title (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Add Button (passed : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Enter Class Title (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Enter Class Description (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click for Auto Enroll checkbox (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Create Class button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Continue To Success Center (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Manage Classes (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Create Assignment (passed : 9s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Enter Assignment Name (passed : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Create Quick Assignment button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Select Course Topic (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Continue button (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click on Save &amp; Exit button (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Verify it should display Assignment under Assignment Grades (passed : 2s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- run_cukes -->

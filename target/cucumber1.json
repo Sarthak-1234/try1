@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 13409519818,
+              "duration": 5526126854,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Check the product navigation through FADAVIS.COM",
+        "line": 27,
+        "name": "Verification of assignment creation",
         "description": "",
-        "id": "check-browsersite-and-navigation-to-other-products;check-the-product-navigation-through-fadavis.com;;2",
+        "id": "creation-of-class-through-teacher;verification-of-assignment-creation;;2",
         "after": [
           {
             "result": {
-              "duration": 1568939302,
+              "duration": 1502115331,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10739481449,
+              "duration": 5063481249,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 18478470454,
+              "duration": 8685744419,
               "status": "passed"
             },
             "line": 5,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 1450022912,
+              "duration": 177138431,
               "status": "passed"
             },
             "line": 6,
@@ -84,35 +84,215 @@
           },
           {
             "result": {
-              "duration": 3950043578,
+              "duration": 211683273,
               "status": "passed"
             },
             "line": 7,
             "name": "click on Davis Edge",
             "match": {
-              "location": "HomePageTest.click_on_Davis_Edge()"
+              "location": "Teacher_CreateClassTest.click_on_Davis_Edge()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 14224726123,
+              "duration": 7023272858,
               "status": "passed"
             },
             "line": 8,
-            "name": "it should open the new tab with title KIA",
+            "name": "It should open Davis Edge in new window",
             "match": {
-              "location": "HomePageTest.it_should_open_the_new_tab_with_title_KIA()"
+              "location": "Teacher_CreateClassTest.it_should_open_Davis_Edge_in_new_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1392555032,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Rudd Title",
+            "match": {
+              "location": "Teacher_CreateClassTest.click_on_Rudd_Title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7574912123,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on Add Button",
+            "match": {
+              "location": "Teacher_CreateClassTest.click_on_Add_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 283237401,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter Class Title",
+            "match": {
+              "location": "Teacher_CreateClassTest.enter_Class_Title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 372966169,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter Class Description",
+            "match": {
+              "location": "Teacher_CreateClassTest.enter_Class_Description()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177531763,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click for Auto Enroll checkbox",
+            "match": {
+              "location": "Teacher_CreateClassTest.click_for_Auto_Enroll_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244359674,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on Create Class button",
+            "match": {
+              "location": "Teacher_CreateClassTest.click_on_Create_Class_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1277007631,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on Continue To Success Center",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Continue_To_Success_Center()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1071449683,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Manage Classes",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Manage_Classes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9858176633,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on Create Assignment",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Create_Assignment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3409991453,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Enter Assignment Name",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.enter_Assignment_Name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141126923,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Create Quick Assignment button",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Create_Quick_Assignment_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1693521742,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Select Course Topic",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.select_Course_Topic()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211260608,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click on Continue button",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300012044,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on Save \u0026 Exit button",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.click_on_Save_Exit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2877843274,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Verify it should display Assignment under Assignment Grades",
+            "match": {
+              "location": "Teacher_CreateAssignmentTest.verify_it_should_display_Assignment_under_Assignment_Grades()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Check BrowserSite and navigation to other products",
+    "name": "Creation of CLASS through Teacher",
     "description": "",
-    "id": "check-browsersite-and-navigation-to-other-products",
+    "id": "creation-of-class-through-teacher",
     "keyword": "Feature",
-    "uri": "src/test/resources/featurefiles/HomePage.feature"
+    "uri": "src/test/resources/featurefiles/Teacher_CreateAssignment.feature"
   }
 ]

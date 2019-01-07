@@ -13,9 +13,10 @@ public class HomePageTest {
 		test.homepage.clickBrowserSite();
 	}
 
-	@When("^click on Davis Edge$")
-	public void click_on_Davis_Edge() throws Throwable {
-	    test.homepage.clickOnDavisEdge();
+	
+	@When("^click on KIA$")
+	public void click_on_KIA() throws Throwable {
+		test.homepage.clickOnKIA();
 	}
 	
 	@Then("^it should open the new tab with title KIA$")

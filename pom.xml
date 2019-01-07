@@ -10,8 +10,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <seleniumver>2.52.0</seleniumver>
+        <seleniumver>3.4.0</seleniumver>
+        
     </properties>
+    
+    
 
     <dependencies>
     
@@ -20,6 +23,27 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.1.2</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+	<dependency>
+	    <groupId>io.appium</groupId>
+	    <artifactId>java-client</artifactId>
+	    <version>3.2.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>27.0.1-jre</version>
+</dependency>
+
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-remote-driver</artifactId>
+    <version>3.6.0</version>
+</dependency>
+		
 		
 		<dependency>
 		    <groupId>org.assertj</groupId>

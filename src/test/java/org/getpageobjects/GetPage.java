@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,8 @@ public class GetPage extends BaseUi {
 	public List<WebElement> e=null;
 	public WebDriverWait wait;
 	public WebElement ee;
+	public JavascriptExecutor js;
+	public Actions act;
 	
 	public GetPage(WebDriver driver) {
 	super(driver);
@@ -45,8 +48,22 @@ public class GetPage extends BaseUi {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
+	public String fetchText(String propFilename, String objectKey){
+		return getObject(propFilename,objectKey).getText();
+		 
+	}
+	
+	public void scrollDownToElement(String propFilename, String objectKey) {
+		js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();",getObject(propFilename,objectKey));
+	}
+	
 	public void launchURL() {
 		test.launchUrl("https://www.fadavis.com");
+	}
+	
+	public void refreshPage() {
+		driver.navigate().refresh();
 	}
 	
 	public boolean isElementPresent(String propFilename, String objectKey) {
@@ -68,11 +85,21 @@ public class GetPage extends BaseUi {
 	}
 	
 	public void click(String propFilename, String objectKey) {
+		System.out.println("INFO ------------->"+propFilename+" ------"+objectKey);
 		getObject(propFilename,objectKey).click();
+	}
+	
+	public void clickusinglocator(String locator, String locatorType) {
+		getObjectusinglocator(locator,locatorType).click();
 	}
 	
 	public String getMessage(String propFilename,String objectKey) {
 		return getObject(propFilename,objectKey).getText().trim();
+	}
+	
+	public void removeText(String propFilename,String objectKey) throws Exception {
+		Thread.sleep(3000);
+		getObject(propFilename,objectKey).clear();
 	}
 	
 	public void type(String propFilename, String objectKey,String data) {
@@ -98,26 +125,32 @@ public class GetPage extends BaseUi {
 	
 	public WebElement getObject(String propFilename, String objectKey) {
 		ee = null;
-		wait  =  new WebDriverWait(driver, 20);
+		wait  =  new WebDriverWait(driver, 30);
 
 		try {
 			//System.out.println(objectKey);
 			if(objectKey.endsWith("_xpath")) {
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey))));
 				ee = driver.findElement(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 				
 			}else if(objectKey.endsWith("_id")) {
+				//System.out.println("----sarthak "+ConfigPropertyReader.getProperty(propFilename, objectKey));
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				
 				ee = driver.findElement(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 					
 			}
 			else if(objectKey.endsWith("_name")) {
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey))));
 				ee = driver.findElement(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 				
 			}
 			else if(objectKey.endsWith("_css")) {
 				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey))));
 				ee = driver.findElement(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey)));// present
 				
 			}
@@ -128,6 +161,45 @@ public class GetPage extends BaseUi {
 	}
 	
 	
+	public WebElement getObjectusinglocator(String locator, String locatorType) {
+		ee = null;
+		wait  =  new WebDriverWait(driver, 30);
+
+		try {
+			//System.out.println(objectKey);
+			if(locatorType.equalsIgnoreCase("xpath")) {
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator)));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.xpath(locator));// present
+				
+			}else if(locatorType.equalsIgnoreCase("id")) {
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(locator)));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.id(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.id(locator));// present
+					
+			}
+			else if(locatorType.equalsIgnoreCase("name")) {
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.name(locator)));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.name(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.name(locator));// present
+				
+			}
+			else if(locatorType.equalsIgnoreCase("css")) {
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(locator)));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConfigPropertyReader.getProperty(propFilename, objectKey))));
+				ee = driver.findElement(By.cssSelector(locator));// present
+				
+			}
+		}catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+		return ee;
+	}
+	
+	public void moveMouserOverElement(String propFilename, String objectKey) {
+		act = new Actions(driver);
+		act.moveToElement(getObject(propFilename, objectKey)).build().perform();
+	}
 	
 	
 }

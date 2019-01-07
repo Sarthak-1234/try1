@@ -5,10 +5,8 @@
 package org.testinitiator;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
@@ -17,7 +15,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -28,10 +25,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.Reporter;
 import org.utils.ConfigPropertyReader;
-import org.utils.ReadingPropertyFile;
-import static org.utils.ConfigPropertyReader.getProperty;
+
+import io.appium.java_client.android.AndroidDriver;
 
 public class WebDriverFactory {
 	
@@ -44,7 +40,7 @@ public class WebDriverFactory {
 	static String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
 	
 	public static WebDriver driver;
-	private String browser = "";
+	private String type = "";
 	public enum DriverType {
 		CHROME, FIREFOX, SAFARI, IE, MOBILE
 	}
@@ -56,7 +52,7 @@ public class WebDriverFactory {
 
 	public static WebDriver getDriver() throws MalformedURLException {
 		//DriverType type = DriverType.valueOf(System.getProperty("browser").toUpperCase());
-		DriverType type = DriverType.valueOf(ConfigPropertyReader.getProperty("browser").toUpperCase());
+		DriverType type = DriverType.valueOf(ConfigPropertyReader.getProperty("type").toUpperCase());
 		//DriverLocation location = DriverLocation.valueOf(System.getProperty("server").toUpperCase());
 		DriverLocation location = DriverLocation.LOCAL;
 		return getDriver(type, location);
@@ -219,16 +215,37 @@ public class WebDriverFactory {
 
 	private static WebDriver getMobileDriver() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-
-		capabilities.setCapability("deviceName", System.getProperty("mobileDeviceName", "094c9e7f"));
-		capabilities.setCapability("device", System.getProperty("mobileDeviceType", "Android"));
-		capabilities.setCapability("platformName", System.getProperty("mobileDeviceType", "Android"));
-		capabilities.setCapability("app", System.getProperty("mobileBrowser", "Chrome"));
-		capabilities.setCapability(CapabilityType.VERSION, "5.0.2");
-		capabilities.setCapability(CapabilityType.PLATFORM, "Windows");
+		capabilities.setCapability("browserName", "Chrome");
+		capabilities.setCapability("deviceName", "MotoG3");
+		// "Nexus 10");
+		// cap.setCapability("device", appiumDeviceConfig[1]);
+		capabilities.setCapability("platformName", "Android");
+		//cap.setCapability("udid", "ZY222WD7H5"); //Karan Sir's mobile
+		capabilities.setCapability("udid", "520318e664e51469"); //MMS tablet
+		capabilities.setCapability("platformVersion", "8.1.0");
+		capabilities.setCapability("newCommandTimeout", 120000);
+		capabilities.setCapability("noReset", false);
+		capabilities.setCapability("autoGrantPermissions", true);
+		capabilities.setCapability("clearSystemFiles", true);
+		//cap.setCapability("autoWebview", true);
+		ChromeOptions options = new ChromeOptions();
+		capabilities.setCapability("chromeOptions", options);
+		String appiumServerHostUrl = "http://127.0.0.1:4723/wd/hub";
+		URL appiumServerHost = null;
+		try {
+		appiumServerHost = new URL(appiumServerHostUrl);
+		} 
+		catch (MalformedURLException e) 
+		{
+		e.printStackTrace();
+		}
 		capabilities.setJavascriptEnabled(true);
+		System.out.println(appiumServerHostUrl + " capabilities= " + capabilities);
+		return new AndroidDriver(appiumServerHost, capabilities);
+		
+		
 
-		return new RemoteWebDriver(new URL(System.getProperty("appiumServer")), capabilities);
+		//return new RemoteWebDriver(new URL(System.getProperty("appiumServer")), capabilities);
 	}
 
 	private static WebDriver configureBrowser(WebDriver driver) throws MalformedURLException {
@@ -252,7 +269,7 @@ public class WebDriverFactory {
 	}
 
 	private static boolean isNotMobile() {
-		return !System.getProperty("browser").equalsIgnoreCase("mobile");
+		return !System.getProperty("type").equalsIgnoreCase("mobile");
 	}
 
 	private static boolean isLocal() {

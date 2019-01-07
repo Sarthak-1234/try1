@@ -22,7 +22,11 @@ public class HomePage extends GetPage{
 	}
 	
 	public void clickOnDavisEdge() {
-		click("HomePage","DavisEdge_css");
+		click("Teacher_CreateCLass","DavisEdge_css");
+	}
+	
+	public void clickOnKIA() {
+		click("HomePage","KIA_css");
 	}
 	
 	public void enterCorrectEmailID(String email) {
