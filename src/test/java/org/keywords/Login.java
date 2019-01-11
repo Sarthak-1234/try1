@@ -59,7 +59,7 @@ public class Login extends GetPage{
 
 	public String loginverificationName() {
 		//return driver.findElement(By.cssSelector("a.pull-right.postLogin>b")).getText();
-		return getMessage ("Login","LoginVerificationName_css");
+		return getMessage ("Login","LoginVerificationName_xpath");
 	}
 	
 	public boolean isAlertMessagePresent() {

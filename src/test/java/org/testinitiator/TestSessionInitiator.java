@@ -7,6 +7,7 @@ import org.keywords.HomePage;
 import org.keywords.Login;
 import org.keywords.Teacher_CreateAssignment;
 import org.keywords.Teacher_CreateClass;
+import org.keywords.Teacher_DeleteClass;
 import org.keywords.TitleVerification;
 import org.openqa.selenium.WebDriver;
 import org.utils.ConfigPropertyReader;
@@ -51,6 +52,7 @@ public class TestSessionInitiator {
 	public HomePage homepage;
 	public Teacher_CreateClass createclass;
 	public Teacher_CreateAssignment createassignment;
+	public Teacher_DeleteClass deleteclass;
 
 	public TestSessionInitiator(String testname) throws MalformedURLException {
 		this.testname = testname;
@@ -120,6 +122,7 @@ public class TestSessionInitiator {
 		logincheck = new Login(driver);
 		createclass = new Teacher_CreateClass (driver);
 		createassignment = new Teacher_CreateAssignment(driver);
+		deleteclass = new Teacher_DeleteClass(driver);
 		
 		//System.out.println(logincheck.getClass().getSimpleName()+".propertiessony");
 //		prop=new ReadingPropertyFile(logincheck.getClass().getSimpleName()+".properties");

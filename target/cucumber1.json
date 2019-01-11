@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5526126854,
+              "duration": 23040258169,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 27,
+        "line": 18,
         "name": "Verification of assignment creation",
         "description": "",
         "id": "creation-of-class-through-teacher;verification-of-assignment-creation;;2",
         "after": [
           {
             "result": {
-              "duration": 1502115331,
+              "duration": 2342124433,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5063481249,
+              "duration": 4942695632,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 8685744419,
+              "duration": 10942450299,
               "status": "passed"
             },
             "line": 5,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 177138431,
+              "duration": 638930703,
               "status": "passed"
             },
             "line": 6,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 211683273,
+              "duration": 550412599,
               "status": "passed"
             },
             "line": 7,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 7023272858,
+              "duration": 18325165345,
               "status": "passed"
             },
             "line": 8,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 1392555032,
+              "duration": 3657103568,
               "status": "passed"
             },
             "line": 9,
@@ -120,169 +120,61 @@
           },
           {
             "result": {
-              "duration": 7574912123,
+              "duration": 6862318406,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on Add Button",
+            "name": "click on settings icon",
             "match": {
-              "location": "Teacher_CreateClassTest.click_on_Add_Button()"
+              "location": "Teacher_DeleteClassTest.click_on_settings_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 283237401,
+              "duration": 559782365,
               "status": "passed"
             },
             "line": 11,
-            "name": "Enter Class Title",
+            "name": "click on Delete button",
             "match": {
-              "location": "Teacher_CreateClassTest.enter_Class_Title()"
+              "location": "Teacher_DeleteClassTest.click_on_Delete_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 372966169,
+              "duration": 1123287835,
               "status": "passed"
             },
             "line": 12,
-            "name": "Enter Class Description",
+            "name": "confirm deletion pop-up opens up",
             "match": {
-              "location": "Teacher_CreateClassTest.enter_Class_Description()"
+              "location": "Teacher_DeleteClassTest.confirm_deletion_pop_up_opens_up()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 177531763,
+              "duration": 716779488,
               "status": "passed"
             },
             "line": 13,
-            "name": "Click for Auto Enroll checkbox",
+            "name": "click on ok button",
             "match": {
-              "location": "Teacher_CreateClassTest.click_for_Auto_Enroll_checkbox()"
+              "location": "Teacher_DeleteClassTest.click_on_ok_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 244359674,
+              "duration": 538045060,
               "status": "passed"
             },
             "line": 14,
-            "name": "Click on Create Class button",
+            "name": "a confirmation pop-up appears",
             "match": {
-              "location": "Teacher_CreateClassTest.click_on_Create_Class_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1277007631,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Click on Continue To Success Center",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Continue_To_Success_Center()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1071449683,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Click on Manage Classes",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Manage_Classes()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9858176633,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Click on Create Assignment",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Create_Assignment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3409991453,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Enter Assignment Name",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.enter_Assignment_Name()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 141126923,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Click on Create Quick Assignment button",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Create_Quick_Assignment_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1693521742,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Select Course Topic",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.select_Course_Topic()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 211260608,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Click on Continue button",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Continue_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1300012044,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Click on Save \u0026 Exit button",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.click_on_Save_Exit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2877843274,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify it should display Assignment under Assignment Grades",
-            "match": {
-              "location": "Teacher_CreateAssignmentTest.verify_it_should_display_Assignment_under_Assignment_Grades()"
+              "location": "Teacher_DeleteClassTest.a_confirmation_pop_up_appears()"
             },
             "keyword": "Then "
           }
@@ -293,6 +185,6 @@
     "description": "",
     "id": "creation-of-class-through-teacher",
     "keyword": "Feature",
-    "uri": "src/test/resources/featurefiles/Teacher_CreateAssignment.feature"
+    "uri": "src/test/resources/featurefiles/Teacher_DeleteClass.feature"
   }
 ]

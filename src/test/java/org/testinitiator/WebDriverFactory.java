@@ -28,6 +28,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.utils.ConfigPropertyReader;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 public class WebDriverFactory {
 	
@@ -52,7 +53,7 @@ public class WebDriverFactory {
 
 	public static WebDriver getDriver() throws MalformedURLException {
 		//DriverType type = DriverType.valueOf(System.getProperty("browser").toUpperCase());
-		DriverType type = DriverType.valueOf(ConfigPropertyReader.getProperty("type").toUpperCase());
+		DriverType type = DriverType.valueOf(ConfigPropertyReader.getConfigProperty("type").toUpperCase());
 		//DriverLocation location = DriverLocation.valueOf(System.getProperty("server").toUpperCase());
 		DriverLocation location = DriverLocation.LOCAL;
 		return getDriver(type, location);
@@ -216,12 +217,13 @@ public class WebDriverFactory {
 	private static WebDriver getMobileDriver() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", "Chrome");
-		capabilities.setCapability("deviceName", "MotoG3");
+		capabilities.setCapability("deviceName", "Android");
 		// "Nexus 10");
 		// cap.setCapability("device", appiumDeviceConfig[1]);
 		capabilities.setCapability("platformName", "Android");
-		//cap.setCapability("udid", "ZY222WD7H5"); //Karan Sir's mobile
+		//capabilities.setCapability("udid", "ZY222WD7H5"); //Karan Sir's mobile
 		capabilities.setCapability("udid", "520318e664e51469"); //MMS tablet
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 		capabilities.setCapability("platformVersion", "8.1.0");
 		capabilities.setCapability("newCommandTimeout", 120000);
 		capabilities.setCapability("noReset", false);
@@ -269,11 +271,12 @@ public class WebDriverFactory {
 	}
 
 	private static boolean isNotMobile() {
-		return !System.getProperty("type").equalsIgnoreCase("mobile");
+		return !ConfigPropertyReader.getConfigProperty("type").equalsIgnoreCase("mobile");
 	}
 
 	private static boolean isLocal() {
-		return System.getProperty("server").equals("local");
+		return true;
+				//System.getProperty("server").equals("local");
 	}
 
 	private static void maximizeScreen(WebDriver driver) {

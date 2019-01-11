@@ -18,6 +18,8 @@
 
     <dependencies>
     
+   
+    
     	<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -25,33 +27,35 @@
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-	<dependency>
-	    <groupId>io.appium</groupId>
-	    <artifactId>java-client</artifactId>
-	    <version>3.2.0</version>
-	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>6.1.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-remote-driver</artifactId>
+    <version>3.12.0</version>
+</dependency>
+
+
 	
-	<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
     <version>27.0.1-jre</version>
 </dependency>
 
-	<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-remote-driver</artifactId>
-    <version>3.6.0</version>
-</dependency>
-		
-		
 		<dependency>
 		    <groupId>org.assertj</groupId>
 		    <artifactId>assertj-core</artifactId>
 		    <version>3.10.0</version>
 		    <scope>test</scope>
 		</dependency> 
-
 
         <dependency>
             <groupId>org.testng</groupId>
@@ -184,8 +188,7 @@
                                      <monochrome>false</monochrome>
                                      <useTestNG>true</useTestNG>
                                      <namingScheme>simple</namingScheme>
-                                     <tags><tag>${tags}</tag>
-                                     </tags>
+                                     
 <!--                                      <parallelScheme>FEATURE</parallelScheme> -->
                                 </configuration>
                            </execution>

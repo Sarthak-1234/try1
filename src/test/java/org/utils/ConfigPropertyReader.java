@@ -11,6 +11,7 @@ import java.util.Properties;
 public class ConfigPropertyReader {
 
     private static String defaultConfigFile = "Config";
+    public static String type="";
     
     /**
      * construtor of this class
@@ -27,6 +28,35 @@ public class ConfigPropertyReader {
      * @return String value of the property
      */
     public static String getProperty(String propFilename, String Property) {
+    	
+    	if(type.equalsIgnoreCase("chrome")||type.equalsIgnoreCase("Firefox")||type.equalsIgnoreCase("ie")) {
+    	
+        try {
+        	String proFilenew = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\desktop\\"+propFilename+".properties";
+            Properties prop = ResourceLoader.loadProperties(proFilenew);
+            return prop.getProperty(Property);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    	}
+    	
+    	else {
+    		
+    		try {
+            	String proFilenew = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\mobile\\"+propFilename+".properties";
+                Properties prop = ResourceLoader.loadProperties(proFilenew);
+                return prop.getProperty(Property);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                return null;
+            }
+        	}
+    		
+    }
+    
+    
+    public static String getConfigTypeProperty(String propFilename, String Property) {
         try {
         	String proFilenew = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\"+propFilename+".properties";
             Properties prop = ResourceLoader.loadProperties(proFilenew);
@@ -37,8 +67,9 @@ public class ConfigPropertyReader {
         }
     }
     
-    public static String getProperty(String property){
-        return getProperty(defaultConfigFile, property);
+    public static String getConfigProperty(String property){
+    	type=getConfigTypeProperty(defaultConfigFile, property);
+        return type;
     }
     }
 

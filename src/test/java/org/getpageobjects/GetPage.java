@@ -85,7 +85,7 @@ public class GetPage extends BaseUi {
 	}
 	
 	public void click(String propFilename, String objectKey) {
-		System.out.println("INFO ------------->"+propFilename+" ------"+objectKey);
+	//	System.out.println("INFO ------------->"+propFilename+" ------"+objectKey);
 		getObject(propFilename,objectKey).click();
 	}
 	

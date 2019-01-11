@@ -18,7 +18,7 @@ public class Teacher_CreateClass extends GetPage{
 	}
 	
 	public void clickOnAddClassButton() throws Exception {
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		click("Teacher_CreateClass","AddClass_css");
 	}
 	

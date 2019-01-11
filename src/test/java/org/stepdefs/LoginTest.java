@@ -13,9 +13,6 @@ import javax.mail.MessagingException;
 import org.testng.Assert;
 
 public class LoginTest {
-	
-	
-	
 
 	@When("^Click on Login/Join button$")
 	public void click_on_Login_Join_button() throws Throwable {
@@ -39,7 +36,8 @@ public class LoginTest {
 
 	@Then("^Login is Successfull\\.$")
 	public void login_is_Successfull() throws Throwable {
-		Assert.assertEquals(test.logincheck.loginverificationName(), "Welcome!");
+		System.out.println(test.logincheck.loginverificationName());
+		Assert.assertTrue(test.logincheck.loginverificationName().contains("WELCOME")||test.logincheck.loginverificationName().contains("Welcome"));
 	}
 
 	@When("^Enter Incorrect Email ID$")

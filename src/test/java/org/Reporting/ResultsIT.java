@@ -94,7 +94,7 @@ public class ResultsIT {
 		mailtext = "Hi All,<br>";
 		mailtext = mailtext + "<br><b>Test Configuration Details </b>" ;
 		mailtext = mailtext + "<br><b>Test Environment: </b>" + "Production";
-		mailtext = mailtext + "<br><b>Test Browser: </b>" + ConfigPropertyReader.getProperty("browser");
+		mailtext = mailtext + "<br><b>Test Browser: </b>" + ConfigPropertyReader.getConfigProperty("type");
 		mailtext = mailtext + "<br><b>Test Date: </b>" + today;
 		mailtext = mailtext + "<br><br><b>" + projectName + " Test Automation Result  ";
 		mailtext = mailtext + "<br><b>" + testSetResult() + "</b>";

@@ -15,7 +15,7 @@ import org.testng.annotations.AfterSuite;
 
 
 
-@CucumberOptions(features = "src/test/resources/featurefiles/Teacher_CreateAssignment.feature", 
+@CucumberOptions(features = "src/test/resources/featurefiles/Teacher_DeleteClass.feature", 
 glue ="org.stepdefs", 
 plugin = {"html:target/site/cucumber-html",
 		"json:target/cucumber1.json"},
